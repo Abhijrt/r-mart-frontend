@@ -1,0 +1,43 @@
+.main-navbar-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #131a22;
+  padding: 10px;
+  .project-name {
+    font-size: x-large;
+    font-weight: 700;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .search-bar {
+    input {
+      width: 600px;
+      padding: 10px;
+      border: none;
+    }
+    i {
+      background-color: white;
+      padding: 10px;
+      color: #131a22;
+    }
+    input:hover {
+      border: none;
+    }
+  }
+  .sign-in {
+    padding: 10px;
+    color: #131a22;
+    background-color: white;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .cart-icon {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    i {
+      padding-left: 5px;
+    }
+  }
+}
