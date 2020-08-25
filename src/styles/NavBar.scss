@@ -3,6 +3,7 @@
   justify-content: space-around;
   background-color: #131a22;
   padding: 10px;
+  height: 35px;
   .project-name {
     font-size: x-large;
     font-weight: 700;
@@ -15,11 +16,13 @@
       width: 600px;
       padding: 10px;
       border: none;
+      // border-radius: 4px;
     }
     i {
       background-color: white;
       padding: 10px;
       color: #131a22;
+      cursor: pointer;
     }
     input:hover {
       border: none;
@@ -31,13 +34,32 @@
     background-color: white;
     font-size: 12px;
     cursor: pointer;
+    border-radius: 4px;
   }
   .cart-icon {
     padding: 10px;
     color: white;
     cursor: pointer;
+    position: relative;
     i {
       padding-left: 5px;
+    }
+    img {
+      position: absolute;
+      width: 60px;
+      top: 0;
+      left: -10px;
+    }
+    span {
+      position: absolute;
+      left: 40px;
+      bottom: 0px;
+    }
+    .cart-count {
+      color: #f08806;
+      position: absolute;
+      top: 0;
+      left: 18px;
     }
   }
 }
