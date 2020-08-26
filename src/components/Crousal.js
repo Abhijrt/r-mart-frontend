@@ -1,30 +1,43 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import firstImage from "../static/images/AllProduct.png";
 import secondImage from "../static/images/AddProduct.png";
 import thirdImage from "../static/images/Cart.png";
+import ImageComponent from "./ImageComponent";
 
-export default class Crousal extends Component {
-  render() {
-    return (
-      <div>
-        <div className="crousal-container">
-          <div className="crousal fade">
-            <img src={firstImage} alt="first-img" />
+function Crousal() {
+  let crousalArray = [
+    <ImageComponent src={firstImage} />,
+    <ImageComponent src={secondImage} />,
+    <ImageComponent src={thirdImage} />,
+  ];
+  const [x, setX] = useState(0);
+  const goLeft = () => {
+    x === 0 ? setX(-100 * (crousalArray.length - 1)) : setX(x + 100);
+  };
+  const goRight = () => {
+    x === -100 * (crousalArray.length - 1) ? setX(0) : setX(x - 100);
+  };
+  return (
+    <div className="crousal-container">
+      {crousalArray.map((item, index) => {
+        return (
+          <div
+            key={index}
+            className="crousal fade"
+            style={{ transform: `translateX(${x}%)` }}
+          >
+            {item}
           </div>
-          <div className="crousal fade">
-            <img src={secondImage} alt="second-img" />
-          </div>
-          <div className="crousal fade">
-            <img src={thirdImage} alt="third-img" />
-          </div>
-          <a onClick={() => this.slideShow(-1)} className="prev-btn">
-            &#10094;
-          </a>
-          <a onClick={() => this.slideShow(1)} className="next-btn">
-            &#10095;
-          </a>
-        </div>
-      </div>
-    );
-  }
+        );
+      })}
+      <a onClick={goLeft} className="prev-btn">
+        &#10094;
+      </a>
+      <a onClick={goRight} className="next-btn">
+        &#10095;
+      </a>
+    </div>
+  );
 }
+
+export default Crousal;
