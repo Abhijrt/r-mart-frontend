@@ -7,8 +7,9 @@ export default class NavBar extends Component {
     return (
       <nav className="main-navbar-container">
         <div className="project-name">
-          {/* <Link className="nav-link" to="/"> */}R Mart
-          {/* </Link> */}
+          <Link className="nav-link" to="/">
+            R Mart
+          </Link>
         </div>
         <div className="search-bar">
           <input placeholder="Search for products,brand and more" />
@@ -16,19 +17,17 @@ export default class NavBar extends Component {
         </div>
         <div className="sign-in">
           Hello,
-          {/* <Link className="nav-link" to="/login"> */}
-          Sign in
-          {/* </Link> */}
+          <Link className="nav-link" to="/login">
+            Sign in
+          </Link>
         </div>
         <div className="cart-icon">
-          <span className="cart-count">0</span>
-          {/* <Link className="nav-link" to="/cart"> */}
-
-          <img src={cartImage} alt="cart" />
-          {/* <i className="fa fa-shopping-cart"></i> */}
-          <span>Cart</span>
-
-          {/* </Link> */}
+          <Link className="nav-link" to="/cart">
+            <span className="cart-count">0</span>
+            <img src={cartImage} alt="cart" />
+            <i className="fa fa-shopping-cart"></i>
+            <span>Cart</span>
+          </Link>
         </div>
       </nav>
     );

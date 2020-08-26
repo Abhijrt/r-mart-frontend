@@ -1,13 +1,22 @@
 import React, { Component } from "react";
-import { NavBar, Crousal } from "../components";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { NavBar, Crousal, Cart, Login } from "../components";
 import "../styles/app.scss";
+
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <NavBar />
-        <Crousal />
-      </div>
+      <Router>
+        <div>
+          <NavBar />
+          {/* <Crousal /> */}
+          <Switch>
+            <Route path="/" exact component={Crousal} />
+            <Route path="/login" exact component={Login} />
+            <Route path="/cart" exact component={Cart} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
