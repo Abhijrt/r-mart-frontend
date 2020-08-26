@@ -17,7 +17,7 @@ export default class NavBar extends Component {
         </div>
         <div className="sign-in">
           Hello,
-          <Link className="nav-link" to="/login">
+          <Link className="login-link" to="/login">
             Sign in
           </Link>
         </div>

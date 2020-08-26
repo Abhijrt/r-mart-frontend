@@ -35,6 +35,11 @@
     font-size: 12px;
     cursor: pointer;
     border-radius: 4px;
+    .login-link {
+      color: black;
+      text-decoration: none;
+      font-weight: 600;
+    }
   }
   .cart-icon {
     padding: 10px;
@@ -61,5 +66,9 @@
       top: 0;
       left: 18px;
     }
+  }
+  .nav-link {
+    color: white;
+    text-decoration: none;
   }
 }
