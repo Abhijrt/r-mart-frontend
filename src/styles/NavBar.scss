@@ -5,11 +5,17 @@
   padding: 10px;
   height: 35px;
   .project-name {
+    display: flex;
+    flex-direction: column;
     font-size: x-large;
     font-weight: 700;
     color: white;
     justify-content: center;
     cursor: pointer;
+    img {
+      height: 20px;
+      width: 60px;
+    }
   }
   .search-bar {
     input {

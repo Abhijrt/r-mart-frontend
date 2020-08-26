@@ -10,12 +10,12 @@ export default class App extends Component {
       <Router>
         <div>
           <NavBar />
-          {/* <Crousal /> */}
           <Switch>
             <Route path="/" exact component={Crousal} />
             <Route path="/login" exact component={Login} />
             <Route path="/cart" exact component={Cart} />
           </Switch>
+          <div className="app-container"></div>
           <Footer />
         </div>
       </Router>

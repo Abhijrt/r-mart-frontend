@@ -1,4 +1,5 @@
 .main-footer-container {
+  margin-top: 30px;
   display: flex;
   justify-content: space-around;
   height: 332px;
@@ -102,11 +103,5 @@
       width: 80px;
       bottom: 10px;
     }
-    // display: flex;
-    // flex-direction: column;
-    // // justify-content: space-around;
-    // height: 20vh;
-    // width: 100%;
-    // border: 1px solid red;
   }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import cartImage from "../static/images/carts.png";
-
+import smiley from "../static/images/smiley.png";
 export default class NavBar extends Component {
   render() {
     return (
@@ -9,6 +9,8 @@ export default class NavBar extends Component {
         <div className="project-name">
           <Link className="nav-link" to="/">
             R Mart
+            <br />
+            <img src={smiley} alt="smiley" />
           </Link>
         </div>
         <div className="search-bar">
