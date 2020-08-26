@@ -2,4 +2,6 @@ import NavBar from "./NavBar";
 import Crousal from "./Crousal";
 import Login from "./Login";
 import Cart from "./Cart";
-export { NavBar, Crousal, Cart, Login };
+import SignUp from "./SignUp";
+
+export { NavBar, Crousal, Cart, Login, SignUp };

@@ -18,9 +18,13 @@ export default class NavBar extends Component {
           <i className="fa fa-search"></i>
         </div>
         <div className="sign-in">
-          Hello,
           <Link className="login-link" to="/login">
-            Sign in
+            Hello, Sign in
+          </Link>
+        </div>
+        <div className="sign-in">
+          <Link className="login-link" to="/signup">
+            Sign Up
           </Link>
         </div>
         <div className="cart-icon">
