@@ -11,10 +11,13 @@ function Crousal() {
     <ImageComponent src={thirdImage} />,
   ];
   const [x, setX] = useState(0);
-  const goLeft = () => {
+  const goLeft = (e) => {
+    e.preventDefault();
     x === 0 ? setX(-100 * (crousalArray.length - 1)) : setX(x + 100);
   };
-  const goRight = () => {
+  const goRight = (e) => {
+    e.preventDefault();
+
     x === -100 * (crousalArray.length - 1) ? setX(0) : setX(x - 100);
   };
   return (
@@ -30,12 +33,12 @@ function Crousal() {
           </div>
         );
       })}
-      <a onClick={goLeft} className="prev-btn">
+      <button onClick={goLeft} className="prev-btn">
         &#10094;
-      </a>
-      <a onClick={goRight} className="next-btn">
+      </button>
+      <button onClick={goRight} className="next-btn">
         &#10095;
-      </a>
+      </button>
     </div>
   );
 }
