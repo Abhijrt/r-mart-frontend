@@ -1,0 +1,112 @@
+.main-footer-container {
+  display: flex;
+  justify-content: space-around;
+  height: 332px;
+  background-color: #182437;
+  color: lightgrey;
+  flex-direction: column;
+  .first-container {
+    display: flex;
+    justify-content: space-around;
+    .about {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      margin-left: 10%;
+      ul {
+        .footer-heading {
+          color: white;
+          font-size: 1rem;
+          font-weight: 700;
+        }
+        li {
+          list-style: none;
+        }
+      }
+      p {
+        color: lightgrey;
+      }
+    }
+    .policy {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      ul {
+        .footer-heading {
+          color: white;
+          font-size: 1rem;
+          font-weight: 800;
+          padding-top: 0;
+        }
+        li {
+          list-style: none;
+          padding: 10px;
+          color: lightgrey;
+        }
+      }
+    }
+    .contact-us {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      ul {
+        .footer-heading {
+          color: white;
+          font-size: 1rem;
+          font-weight: 700;
+          padding-top: 0;
+        }
+        li {
+          list-style: none;
+          padding: 10px;
+          color: lightgrey;
+        }
+      }
+    }
+    .register-office {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      margin-right: 10%;
+      ul {
+        .footer-heading {
+          color: white;
+          font-size: 1rem;
+          font-weight: 700;
+        }
+        li {
+          list-style: none;
+        }
+      }
+      p {
+        color: lightgrey;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .extra-space {
+    display: flex;
+    flex-direction: column;
+    border-top: 0.5px solid lightgrey;
+    height: 20vh;
+    justify-content: center;
+    h1 {
+      color: white;
+      align-self: center;
+      margin: 0;
+    }
+    img {
+      align-self: center;
+      height: 40px;
+      width: 80px;
+      bottom: 10px;
+    }
+    // display: flex;
+    // flex-direction: column;
+    // // justify-content: space-around;
+    // height: 20vh;
+    // width: 100%;
+    // border: 1px solid red;
+  }
+}

@@ -25,7 +25,7 @@ export default class NavBar extends Component {
           <Link className="nav-link" to="/cart">
             <span className="cart-count">0</span>
             <img src={cartImage} alt="cart" />
-            <i className="fa fa-shopping-cart"></i>
+            {/* <i className="fa fa-shopping-cart"></i> */}
             <span>Cart</span>
           </Link>
         </div>
