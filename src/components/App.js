@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { NavBar, Crousal, Cart, Login, SignUp } from "../components";
+import {
+  NavBar,
+  Crousal,
+  Cart,
+  Login,
+  SignUp,
+  Footer,
+  ProductItem,
+} from "../components";
 import "../styles/app.scss";
-import Footer from "./Footer";
 
 export default class App extends Component {
   render() {
@@ -17,6 +24,7 @@ export default class App extends Component {
             <Route path="/signup" exact component={SignUp} />
           </Switch>
           <div className="app-container"></div>
+          <ProductItem />
           <Footer />
         </div>
       </Router>

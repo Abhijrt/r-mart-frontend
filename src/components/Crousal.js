@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import firstImage from "../static/images/crousal1.jpeg";
 import secondImage from "../static/images/crousal2.jpg";
 import thirdImage from "../static/images/background-login.jpeg";
 import ImageComponent from "./ImageComponent";
 
 function Crousal() {
-  useEffect(() => {
-    setInterval((goLeft) => {}, 300);
-    return () => {};
-  }, [40]);
+  // useEffect(() => {
+  //   setInterval((goLeft) => {}, 300);
+  //   return () => {};
+  // }, [40]);
 
   let crousalArray = [
     <ImageComponent src={firstImage} />,
