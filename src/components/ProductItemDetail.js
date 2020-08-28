@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import img from "../static/images/login-iocn.png";
 
-export default class ProductItem extends Component {
+export default class ProductItemDetail extends Component {
   render() {
     const ratingArray = [1, 2, 3, 4, 5];
     return (

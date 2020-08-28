@@ -1,7 +1,12 @@
 import React, { Component } from "react";
+import { ProductItemDetail } from ".";
 
 export default class Cart extends Component {
   render() {
-    return <div>Cart</div>;
+    return (
+      <div>
+        <ProductItemDetail />
+      </div>
+    );
   }
 }

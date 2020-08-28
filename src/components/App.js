@@ -7,7 +7,7 @@ import {
   Login,
   SignUp,
   Footer,
-  ProductItem,
+  ProductItemDetail,
 } from "../components";
 import "../styles/app.scss";
 
@@ -18,13 +18,21 @@ export default class App extends Component {
         <div>
           <NavBar />
           <Switch>
-            <Route path="/" exact component={Crousal} />
+            <Route
+              path="/"
+              exact
+              render={() => (
+                <div>
+                  <Crousal />
+                  <ProductItemDetail />
+                </div>
+              )}
+            />
             <Route path="/login" exact component={Login} />
             <Route path="/cart" exact component={Cart} />
             <Route path="/signup" exact component={SignUp} />
           </Switch>
-          <div className="app-container"></div>
-          <ProductItem />
+          {/* <div className="app-container"></div> */}
           <Footer />
         </div>
       </Router>
