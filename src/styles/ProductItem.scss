@@ -1,43 +1,47 @@
-.productitem-main-container {
+.main-container-item {
+  margin: 2% 15% 0 15%;
+  padding: 10px;
   display: flex;
-  width: 80%;
-  align-self: center;
-  border-radius: 40px;
+  /* border: 1px solid black; */
+  justify-content: space-around;
   background-color: lightgrey;
-  margin: 0 10% 0 10%;
+  border-radius: 40px;
   .left-block {
-    // border: 1px solid black;
+    /* border: 1px solid black; */
     width: 20%;
     img {
       height: 180px;
-      width: 220px;
+      width: 180px;
       border-radius: 40px;
       background-color: white;
-      margin: 20px;
     }
   }
+
   .middle-block {
-    width: 60%;
     display: flex;
     flex-direction: column;
+    /* border: 1px solid black; */
+    width: 60%;
     justify-content: space-around;
-    padding-left: 3%;
     .product-name {
+      padding-left: 15px;
       font-size: x-large;
       font-weight: 800;
       color: #fa8718;
     }
-
     .description {
+      padding-left: 15px;
       flex-wrap: wrap;
     }
-    // .product-rating {
-    //   //   padding-left: 15px;
-    // }
+    .product-rating {
+      padding-left: 15px;
+    }
   }
+
   .right-block {
     display: flex;
     flex-direction: column;
+    /* border: 1px solid black; */
     width: 20%;
     justify-content: space-around;
     .product-price {
@@ -45,6 +49,7 @@
       color: blue;
     }
     .add-btn {
+      /* border: 1px solid black; */
       width: 60%;
       background-color: #fa8718;
       color: white;
@@ -53,5 +58,43 @@
       border-radius: 30px;
       cursor: pointer;
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container-item {
+    width: 90%;
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-container-item {
+    width: 90%;
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+  .middle-block {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-container-item {
+    display: flex;
+    /* justify-content: center;
+      align-content: center; */
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+  .middle-block {
+    margin-left: 100px;
+  }
+  .add-btn {
+    width: 100%;
   }
 }
