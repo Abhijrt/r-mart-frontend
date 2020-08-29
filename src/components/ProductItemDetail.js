@@ -2,8 +2,13 @@ import React, { Component } from "react";
 import img from "../static/images/login-iocn.png";
 
 export default class ProductItemDetail extends Component {
+  // handleAddCartClick = (product) => {
+  //   this.props.onAddToCart(product);
+  // };
+
   render() {
     const ratingArray = [1, 2, 3, 4, 5];
+    // const { product } = this.props;
     return (
       <div>
         <div className="main-container-item">
