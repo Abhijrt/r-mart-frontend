@@ -48,6 +48,7 @@
   }
   .cart-icon {
     padding: 10px;
+    padding-right: 30px;
     color: white;
     cursor: pointer;
     position: relative;
@@ -75,5 +76,15 @@
   .nav-link {
     color: white;
     text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-navbar-container {
+    .search-bar {
+      input {
+        width: 200px;
+      }
+    }
   }
 }

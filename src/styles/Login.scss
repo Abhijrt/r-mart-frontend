@@ -119,3 +119,13 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .main-login-component {
+    .container {
+      .form-container {
+        width: 200px;
+      }
+    }
+  }
+}
