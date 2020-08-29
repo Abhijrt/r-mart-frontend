@@ -6,6 +6,6 @@ export default function ImageComponent({ src }) {
 
 const imgStyle = {
   width: "100%",
-  height: "300px",
+  height: "100%",
   backgroundSize: "cover",
 };

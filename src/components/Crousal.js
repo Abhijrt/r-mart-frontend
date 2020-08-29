@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import firstImage from "../static/images/crousal1.jpeg";
-import secondImage from "../static/images/crousal2.jpg";
+import secondImage from "../static/images/crousal4.jpg";
 import thirdImage from "../static/images/background-login.jpeg";
 import ImageComponent from "./ImageComponent";
 
 function Crousal() {
-  // useEffect(() => {
-  //   setInterval((goLeft) => {}, 300);
-  //   return () => {};
-  // }, [40]);
-
+  // setInterval(() => {
+  //   goRight();
+  //   goLeft();
+  // }, 1000);
   let crousalArray = [
     <ImageComponent src={firstImage} />,
     <ImageComponent src={secondImage} />,
@@ -18,11 +17,11 @@ function Crousal() {
 
   const [x, setX] = useState(0);
   const goLeft = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     x === 0 ? setX(-100 * (crousalArray.length - 1)) : setX(x + 100);
   };
   const goRight = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     x === -100 * (crousalArray.length - 1) ? setX(0) : setX(x - 100);
   };
