@@ -1,6 +1,9 @@
 .main-sign-component {
   background: url("../static/images/background-login.jpeg");
+  background-repeat: no-repeat;
   background-size: cover;
+  height: 90vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   .container {
@@ -44,13 +47,14 @@
       width: 450px; //60%;
       flex-direction: column;
       justify-content: space-around;
+      padding-bottom: 20px;
       form {
-        padding-top: 53px;
+        // padding-top: 53px;
+        margin-top: 33px;
         display: flex;
         flex-direction: column;
         height: 30vh;
         justify-content: space-around;
-
         label {
           font-size: large;
           font-weight: 500;
@@ -115,6 +119,16 @@
     .container {
       .style-container {
         display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-sign-component {
+    .container {
+      .form-container {
+        width: 300px;
       }
     }
   }

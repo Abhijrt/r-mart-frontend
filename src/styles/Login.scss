@@ -1,6 +1,9 @@
 .main-login-component {
   background: url("../static/images/background-login.jpeg");
+  background-repeat: no-repeat;
   background-size: cover;
+  height: 90vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   .container {
@@ -44,13 +47,15 @@
       width: 450px; //60%;
       flex-direction: column;
       justify-content: space-around;
+      // margin-bottom: 10px;
+      padding-bottom: 20px;
       form {
-        padding-top: 53px;
+        margin-top: 33px;
+        // padding-top: 53px;
         display: flex;
         flex-direction: column;
         height: 30vh;
         justify-content: space-around;
-
         label {
           font-size: large;
           font-weight: 500;
@@ -120,11 +125,11 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 400px) {
   .main-login-component {
     .container {
       .form-container {
-        width: 200px;
+        width: 300px;
       }
     }
   }
