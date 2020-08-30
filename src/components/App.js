@@ -16,7 +16,7 @@ export default class App extends Component {
     return (
       <Router>
         <div>
-          {/* <NavBar /> */}
+          <NavBar />
           <Switch>
             <Route
               path="/"

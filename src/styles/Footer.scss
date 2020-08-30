@@ -104,3 +104,36 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .main-footer-container {
+    width: 100%;
+    .first-container {
+      .about {
+        margin: 0%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-footer-container {
+    width: 100%;
+    display: flex;
+    .first-container {
+      width: 100%;
+      margin: 0;
+      height: auto;
+      .about {
+        margin: 0%;
+      }
+      .contact-us {
+        margin-right: 2px;
+      }
+      .register-office {
+        width: 100%;
+        margin-left: 2px;
+      }
+    }
+  }
+}
